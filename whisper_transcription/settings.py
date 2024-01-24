@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ya)11r*2!1y$z3^6!96!u3ze^s7_p&%538odv4@48uu%w_55+%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['munamunna.pythonanywhere.com']
 
 
 # Application definition
@@ -38,8 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app1',
-    'corsheaders.middleware.CorsMiddleware',
-    'corsheaders',
+    
     
 ]
 
@@ -115,7 +114,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-CORS_ALLOW_ALL_ORIGINS: True
+
 
 
 # Static files (CSS, JavaScript, Images)
